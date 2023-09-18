@@ -23,7 +23,8 @@ Subquestions:
 6 - How does the release date influence the success of the opening weekend?
 
 
-![image](https://github.com/alvaarro/DatabasemanagementGroup-4/assets/144010370/598c188b-70fe-4156-9029-40ecd9f674a2)
+![image](https://github.com/alvaarro/DatabasemanagementGroup-4/assets/144010370/eede657d-3374-424c-a67d-580a11dcd79e)
+
 
 
 
