@@ -24,3 +24,10 @@ Subquestions:
 
 
 
+
+![image](https://github.com/alvaarro/DatabasemanagementGroup-4/assets/144010370/a491864c-6882-4d4c-a58c-f64bb4cd9cc0)
+
+
+
+
+
