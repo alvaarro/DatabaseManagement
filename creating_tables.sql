@@ -76,3 +76,32 @@ SELECT reviews.rating, SUM(movies.worldwide_box_office) as TOTAL_SALES
     JOIN movies ON reviews.movie_id = movies.movie_id
     GROUP BY reviews.rating
     ORDER BY TOTAL_SALES DESC;
+
+SELECT directors.director_name, AVG(m.worldwide_box_office) AS AVG_worldwide_box_office
+    FROM movies m
+    JOIN directedby db ON m.movie_id = db.movie_id
+    JOIN directors ON db.director_id = directors.director_id
+    GROUP BY directors.director_name
+    ORDER BY AVG_worldwide_box_office DESC;
+
+SELECT rel_date,
+    SUM(worldwide_box_office) AS total_box_office,
+    SUM(worldwide_box_office) / (SELECT SUM(worldwide_box_office) FROM movies) * 100 AS box_office_percentage
+    FROM movies
+    GROUP BY rel_date
+    ORDER BY total_box_office DESC LIMIT(12)
+
+SELECT rel_date, SUM(worldwide_box_office) AS SUM_worldwide_box_office
+                FROM movies
+                GROUP BY rel_date
+                ORDER BY SUM_worldwide_box_office DESC
+                LIMIT (12);
+
+SELECT ratings.rating_name, AVG(movies.worldwide_box_office) AS average_worldwide_box_office
+            FROM ratings
+            JOIN movierating ON movierating.rating_id = ratings.rating_id
+            JOIN movies ON movies.movie_id = movierating.movie_id
+            GROUP BY ratings.rating_name
+            ORDER BY average_worldwide_box_office DESC;
+
+
