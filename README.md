@@ -25,6 +25,7 @@ Subquestions:
 7 - What role does the choice of rating play in movies’ worldwide box office success?  
 
 Hypothesis: 
+
 1 - The profitability at the box office is positively influenced by movies in genres like action, comedy and drama. 
 
 2 - Famous actors have a positive influence on a movie’s box office.  
