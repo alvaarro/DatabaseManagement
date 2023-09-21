@@ -104,4 +104,27 @@ SELECT ratings.rating_name, AVG(movies.worldwide_box_office) AS average_worldwid
             GROUP BY ratings.rating_name
             ORDER BY average_worldwide_box_office DESC;
 
+SELECT movie_title, production_budget, worldwide_box_office,
+                (worldwide_box_office - production_budget) AS profit,
+                CASE
+                WHEN worldwide_box_office > 0 THEN (production_budget / worldwide_box_office) * 100
+                ELSE 0
+                END AS percentage_production_cost
+                FROM movies;
+
+
+SELECT movie_title, production_budget, worldwide_box_office, 
+                (worldwide_box_office - production_budget) AS profit,
+                CASE
+                WHEN worldwide_box_office > 0 THEN (production_budget / worldwide_box_office) * 100
+                ELSE 0
+                END AS percentage_production_cost
+                FROM
+                    movies
+                ORDER BY
+                    profit DESC LIMIT (10);
+
+
+
+
 
