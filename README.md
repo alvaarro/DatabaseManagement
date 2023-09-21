@@ -22,6 +22,22 @@ Subquestions:
 
 6 - How does the release date influence the success of the opening weekend?
 
+7 - What role does the choice of rating play in movies’ worldwide box office success?  
+
+Hypothesis: 
+1 - The profitability at the box office is positively influenced by movies in genres like action, comedy and drama. 
+
+2 - Famous actors have a positive influence on a movie’s box office.  
+
+3 - Production costs have no obvious positive effect on the worldwide box office success of movies.   
+
+4 - The financial success at the box office is positively influenced by the presence of well-known directors.  
+
+5 - Feelings play a huge role in the success of films at the box office. Films able to engage with the audience positively make bigger box offices.  
+
+6 - The financial success of a movie is positively affected by releasing it during a holiday season, leading to higher worldwide box office revenue compared to releasing the same movie on a non-holiday day.
+
+7 - The profitability at the box office is positively influenced by movies with ratings of G, PG, and PG-13
 
 
 
