@@ -63,3 +63,16 @@ CREATE TABLE reviews (
 	reviewer VARCHAR (255), 
 	movie_id INT REFERENCES movies(movie_id)
 );
+
+ SELECT genres.genre_name, SUM(movies.worldwide_box_office) AS total_worldwide_box_office
+    FROM genres
+    JOIN moviegenrelink ON genres.genre_id = moviegenrelink.genre_id
+    JOIN movies ON movies.movie_id = moviegenrelink.movie_id
+    GROUP BY genres.genre_name
+    ORDER BY total_worldwide_box_office DESC;
+
+SELECT reviews.rating, SUM(movies.worldwide_box_office) as TOTAL_SALES 
+    FROM reviews
+    JOIN movies ON reviews.movie_id = movies.movie_id
+    GROUP BY reviews.rating
+    ORDER BY TOTAL_SALES DESC;
