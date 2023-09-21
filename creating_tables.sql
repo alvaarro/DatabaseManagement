@@ -125,6 +125,15 @@ SELECT movie_title, production_budget, worldwide_box_office,
                     profit DESC LIMIT (10);
 
 
+SELECT actors.actor_name, SUM(movies.worldwide_box_office) AS total_worldwide_box_office
+    FROM actors
+    JOIN actedin ON actors.actor_id = actedin.actor_id
+    JOIN movies ON movies.movie_id = actedin.movie_id
+    GROUP BY actors.actor_name
+    ORDER BY total_worldwide_box_office DESC;
+
+
+
 
 
 
